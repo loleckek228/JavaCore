@@ -17,6 +17,7 @@ public class Cat implements Contestant {
 
     @Override
     public boolean Jump(int height) {
+        System.out.println(getName() + " прыгает");
         if (getMaxHeight() >= height) {
             maxHeight -= height;
             return true;
@@ -26,13 +27,14 @@ public class Cat implements Contestant {
         }
     }
 
-
     @Override
     public boolean Run(int distance) {
+        System.out.println(getName() + " бежит");
         if (getMaxDistance() >= distance) {
             maxDistance -= distance;
             return true;
         } else {
+            maxDistance = 0;
             return false;
         }
     }

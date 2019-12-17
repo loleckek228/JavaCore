@@ -16,7 +16,8 @@ public class Human implements Contestant {
 
     @Override
     public boolean Jump(int height) {
-        if (getMaxHeight() - height >= 0) {
+        System.out.println(getName() + " прыгает");
+        if (getMaxHeight() >= height) {
             maxHeight -= height;
             return true;
         } else {
@@ -27,6 +28,7 @@ public class Human implements Contestant {
 
     @Override
     public boolean Run(int distance) {
+        System.out.println(getName() + " бежит");
         if (getMaxDistance() >= distance) {
             maxDistance -= distance;
             return true;
