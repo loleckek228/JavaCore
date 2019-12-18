@@ -1,8 +1,9 @@
 public class Cat implements Contestant {
+
     private String name;
+
     private int maxHeight;
     private int maxDistance;
-
 
     public Cat(String name, int maxHeight, int maxDistance) {
         this.name = name;

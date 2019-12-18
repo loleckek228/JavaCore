@@ -1,5 +1,7 @@
 public class Robot implements Contestant {
+
     private String name;
+
     private int maxHeight;
     private int maxDistance;
 
@@ -8,7 +10,6 @@ public class Robot implements Contestant {
         this.maxHeight = maxHeight;
         this.maxDistance = maxDistance;
     }
-
 
     @Override
     public String getName() {

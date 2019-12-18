@@ -1,5 +1,7 @@
 public class Human implements Contestant {
+
     private String name;
+
     private int maxHeight;
     private int maxDistance;
 

@@ -6,7 +6,8 @@ public class Wall implements Obstacles {
         this.height = height;
     }
 
-    public void doJump(Contestant contestant) {
+    @Override
+    public void doIt(Contestant contestant) {
         if (contestant.Jump(height)) {
             System.out.println(contestant.getName() + " успешно перепрыгнул");
         } else {

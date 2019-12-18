@@ -15,12 +15,7 @@ public class Main {
 
         for (int i = 0; i < contestant.length; i++) {
             for (int j = 0; j < obstacles.length; j++) {
-                if (obstacles[j] instanceof Wall) {
-                    ((Wall) obstacles[j]).doJump(contestant[i]);
-                } else if (obstacles[j] instanceof Treadmill) {
-                    ((Treadmill) obstacles[j]).doRun(contestant[i]);
-                }
-
+                obstacles[j].doIt(contestant[i]);
                 if (contestant[i].getMaxHeight() <= 0 || contestant[i].getMaxDistance() <= 0) {
                     break;
                 }
