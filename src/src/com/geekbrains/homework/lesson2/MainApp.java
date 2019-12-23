@@ -32,8 +32,8 @@ public class MainApp {
     }
 
     private static boolean checkSize(String[][] twoDimArray) {
-        for (int i = 0; i < twoDimArray.length; i++) {
-            if (twoDimArray[i].length != 4) {
+        for (String[] aTwoDimArray : twoDimArray) {
+            if (aTwoDimArray.length != 4) {
                 return false;
             }
         }
